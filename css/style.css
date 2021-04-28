@@ -35,10 +35,6 @@ body {
     padding-bottom: 100px;
 }
 
-h1 {
-    font-family: 'Aref Ruqaa', serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -81,6 +77,13 @@ ul {
 
 .text-secondary {
     color: var(--secondary-text-color)
+}
+
+.logo {
+    font-family: 'Aref Ruqaa', serif;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 30px;
 }
 
 /* 3. header */
