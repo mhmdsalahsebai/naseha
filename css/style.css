@@ -1,0 +1,217 @@
+/*
+
+[table of content]
+
+1. global stylesheet
+2. main header
+3. posts
+
+*/
+
+/* 1. global stylehseet */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-text-color: hsl(210, 24%, 16%);
+    --secondary-text-color: hsl(211, 12%, 43%);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+body {
+    background-color: hsl(216, 33%, 97%);
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-family: 'Aref Ruqaa', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.link-reset {
+    text-decoration: none;
+    color: inherit;
+}
+
+.margin-top-lg {
+    margin-top: 4rem;
+}
+
+.button {
+    background-color: #FFF;
+    color: var(--primary-text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    /* box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%); */
+    /* border: 1px solid hsl(214, 15%, 91%); */
+}
+
+/* 3. header */
+
+.main-header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.main-header .flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-header nav .nav-menu {
+	display: flex;
+}
+
+.main-header nav .nav-menu .nav-menu-item {
+	margin-left: 1rem;
+}
+
+.main-header nav .nav-menu .nav-menu-item:last-child {
+	margin-left: 0;
+}
+
+/* 3. posts */
+
+.posts {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.posts .posts-filter {
+    margin-bottom: 1rem;
+}
+
+.posts .posts-filter li {
+    display: inline-block;
+    margin-left: 0.75rem;
+}
+
+.posts .posts-filter li .active {
+    font-weight: bold;
+}
+
+.posts .post-item {
+    background-color: #FFF;
+    /* box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%); */
+    /* border: 1px solid hsl(214, 15%, 91%); */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.posts .post-item .post-header {
+    display: none;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.posts .post-item .post-header .author-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.1);
+    margin-left: 0.25rem;
+    position: relative;
+    top: 8px;
+}
+
+.posts .post-item .post-content h2 {
+    font-size: 20px;
+}
+
+.posts .post-item .post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 2rem;
+    font-size: 14px;
+}
+
+.posts .post-item .post-footer .post-vote-buttons button {
+    border: unset;
+    padding: 0.25rem 0.75rem;
+}
+
+.posts .post-item .post-footer .post-vote-buttons button:hover {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.posts .post-item .post-footer .post-vote-buttons button:first-of-type {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.posts .post-item .post-footer .post-vote-buttons button:last-of-type {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.posts .post-item .post-footer .post-vote-buttons .vote-numbers {
+    font-weight: bold;
+}
+
+.posts .post-item .post-footer .post-tags li {
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+.posts .post-item .post-footer .post-tags li:last-child {
+    margin-left: 0;
+}
+
+.posts .post-item .post-footer .post-tags .post-tag {
+    background-color: hsl(216, 33%, 97%);
+    color: var(--primary-text-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.posts .load-more-button {
+    text-align: center;
+    margin-top: 2rem;
+}
