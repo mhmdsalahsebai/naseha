@@ -73,8 +73,14 @@ ul {
     -moz-border-radius: 0.25rem;
     -ms-border-radius: 0.25rem;
     -o-border-radius: 0.25rem;
-    /* box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%); */
-    /* border: 1px solid hsl(214, 15%, 91%); */
+}
+
+.text-dark {
+    color: var(--primary-text-color)
+}
+
+.text-secondary {
+    color: var(--secondary-text-color)
 }
 
 /* 3. header */
@@ -87,6 +93,7 @@ ul {
 .main-header .flex {
 	display: flex;
 	justify-content: space-between;
+    align-items: baseline;
 }
 
 .main-header nav .nav-menu {
@@ -124,6 +131,7 @@ ul {
 
 .posts .post-wrapper {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .posts .post-author {
@@ -152,7 +160,6 @@ ul {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 /* .posts .post-item .post-author {
