@@ -122,10 +122,30 @@ ul {
     font-weight: bold;
 }
 
+.posts .post-wrapper {
+    position: relative;
+}
+
+.posts .post-author {
+    position: absolute;
+    top: -1rem;
+    left: calc(50% - 14px);
+}
+
+.posts .post-author .author-image {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.1);
+}
+
 .posts .post-item {
     background-color: #FFF;
-    /* box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%); */
-    /* border: 1px solid hsl(214, 15%, 91%); */
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -135,15 +155,12 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-.posts .post-item .post-header {
-    display: none;
-    justify-content: space-between;
-    align-items: baseline;
+/* .posts .post-item .post-author {
     margin-bottom: 0.5rem;
     font-size: 14px;
 }
 
-.posts .post-item .post-header .author-image {
+.posts .post-item .post-author .author-image {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -156,6 +173,13 @@ ul {
     position: relative;
     top: 8px;
 }
+
+/* .posts .post-item .author-title {
+    display: block;
+    text-align: center;
+} */ 
+
+
 
 .posts .post-item .post-content h2 {
     font-size: 20px;
